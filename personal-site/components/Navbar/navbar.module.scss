@@ -1,0 +1,9 @@
+.navigation {
+  display: grid;
+  font-size: 3em;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
+}
