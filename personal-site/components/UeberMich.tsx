@@ -30,8 +30,7 @@ function UeberMich() {
         </p>
         <p>
           Hobbymäßig spiele ich Basketball, Gitarre und gehe, sofern meine
-          Motivation stimmt, ins Fitnessstudio. Des Weiteren kann ich mich bald
-          Besitzer eines Katers nennen.
+          Motivation stimmt, ins Fitnessstudio.
         </p>
       </div>
       <Image
