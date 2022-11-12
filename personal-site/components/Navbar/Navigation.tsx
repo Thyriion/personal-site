@@ -15,10 +15,10 @@ function Navigation() {
     <nav className="h-20 shadow-lg grid grid-flow-col justify-end items-center md:block text-zinc-300 relative z-50">
       <section className="grid grid-flow-col text-2xl gap-10 justify-center items-center h-full invisible md:visible">
         <a
-          href="#Werdegang"
+          href="#UeberMich"
           className="hover:text-zinc-100 hover:border-b-2 border-zinc-300"
         >
-          Werdegang
+          Über Mich
         </a>
         <a
           href="#Skills"
@@ -45,7 +45,7 @@ function Navigation() {
       <section className={dropDownClass}>
         <div className="flex flex-col items-center gap-3 h-full justify-end pb-6">
           <a href="#Werdegang" className="hover:border-b-2 border-zinc-300">
-            Werdegang
+            UeberMich
           </a>
           <a href="#Skills" className="hover:border-b-2 border-zinc-300">
             Skills

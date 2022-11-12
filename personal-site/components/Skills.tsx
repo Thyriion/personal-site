@@ -1,24 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+
+const cardVariants = {
+  visible: {
+    opacity: 1,
+    translateY: 0,
+    transition: {
+      when: "beforeChildren",
+    },
+    delay: 0.2,
+  },
+  hidden: {
+    opacity: 0,
+    translateY: 40,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
 
 function Skills() {
   const skills: { name: string; progress: number }[] = [
     {
-      name: "C#",
-      progress: 45,
-    },
-    {
-      name: "Delphi",
-      progress: 30,
-    },
-    {
       name: "HTML, CSS, JS",
-      progress: 80,
-    },
-    {
-      name: "Wordpress",
-      progress: 75,
+      progress: 90,
     },
     {
       name: "PHP",
@@ -29,17 +37,45 @@ function Skills() {
       progress: 60,
     },
     {
+      name: "Wordpress",
+      progress: 75,
+    },
+    {
       name: "Tailwind",
-      progress: 50,
+      progress: 80,
+    },
+    {
+      name: "C#",
+      progress: 45,
+    },
+    {
+      name: "Delphi",
+      progress: 30,
     },
   ];
 
+  const controls = useAnimation();
+  const [ref, inView, entry] = useInView();
+
+  useEffect(() => {
+    console.log(entry);
+    if (inView) {
+      controls.start("visible").then();
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="flex gap-10 flex-wrap justify-center items-center">
+    <motion.div
+      className="flex gap-10 flex-wrap justify-center items-center"
+      initial={"hidden"}
+      animate={controls}
+      variants={cardVariants}
+      ref={ref}
+    >
       {skills.map((skill, index) => {
         return (
           <div
-            className="py-10 h-fit w-96 shadow-2xl px-10 animate-fade-in"
+            className="py-10 h-fit w-96 shadow-2xl shadow-gray-900 px-10 rounded-md border-2 border-black"
             key={index}
           >
             <h3 className="pb-10">{skill.name}</h3>
@@ -53,7 +89,7 @@ function Skills() {
           </div>
         );
       })}
-    </div>
+    </motion.div>
   );
 }
 
