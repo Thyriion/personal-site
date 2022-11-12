@@ -6,16 +6,11 @@ import { motion } from "framer-motion";
 function UeberMich() {
   return (
     <motion.div
-      className="flex flex-1 gap-10"
+      className="flex flex-1 gap-10 flex-col md:flex-row"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <Image
-        src={kevin}
-        alt={"Auf dem Bild bin ich, Kevin Schüler, zu sehen"}
-        height={500}
-      />
       <div className="text-2xl text-left leading-relaxed">
         <p>
           Moin, ich bin Kevin und 22 Jahre alt. Derzeit arbeite ich als
@@ -39,6 +34,12 @@ function UeberMich() {
           Besitzer eines Katers nennen.
         </p>
       </div>
+      <Image
+        src={kevin}
+        alt={"Auf dem Bild bin ich, Kevin Schüler, zu sehen"}
+        height={500}
+        className="md:h-96 md:my-auto mx-auto"
+      />
     </motion.div>
   );
 }
