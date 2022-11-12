@@ -45,7 +45,7 @@ function Navigation() {
       <section className={dropDownClass}>
         <div className="flex flex-col items-center gap-3 h-full justify-end pb-6">
           <a href="#Werdegang" className="hover:border-b-2 border-zinc-300">
-            UeberMich
+            Über Mich
           </a>
           <a href="#Skills" className="hover:border-b-2 border-zinc-300">
             Skills
