@@ -13,7 +13,7 @@ function UeberMich() {
     >
       <div className="text-2xl text-left leading-relaxed">
         <p>
-          Moin, ich bin Kevin und 22 Jahre alt. Derzeit arbeite ich als
+          Mein Name ist Kevin und ich bin 22 Jahre alt. Derzeit arbeite ich als
           Webentwickler bei der SelectLine Software GmbH. Durch meine Arbeit bin
           ich vertraut mit HTML, CSS, JS (jQuery), PHP und Wordpress.
         </p>
