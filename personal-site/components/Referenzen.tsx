@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGlobeEurope } from "react-icons/fa";
+import { FaGithub, FaChrome } from "react-icons/fa";
 import { GrGamepad } from "react-icons/gr";
 
 function Referenzen() {
@@ -23,7 +23,7 @@ function Referenzen() {
           className="flex justify-center items-center gap-5 hover:scale-105 hover:text-gray-100"
           rel="noreferrer"
         >
-          <FaGlobeEurope />
+          <FaChrome />
           SelectLine Jobsseite
         </a>
       </div>
@@ -36,6 +36,18 @@ function Referenzen() {
         >
           <GrGamepad />
           Hangman mit React und Typescript
+        </a>
+      </div>
+
+      <div className="w-fit text-2xl my-5">
+        <a
+          href="https://feedback-ui-ks.netlify.app/"
+          target="_blank"
+          className="flex justify-center items-center gap-5 hover:scale-105 hover:text-gray-100"
+          rel="noreferrer"
+        >
+          <FaChrome />
+          Feedback App
         </a>
       </div>
     </div>
