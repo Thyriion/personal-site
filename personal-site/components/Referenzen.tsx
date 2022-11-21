@@ -39,17 +39,17 @@ function Referenzen() {
         </a>
       </div>
 
-      <div className="w-fit text-2xl my-5">
-        <a
-          href="https://feedback-ui-ks.netlify.app/"
-          target="_blank"
-          className="flex justify-center items-center gap-5 hover:scale-105 hover:text-gray-100"
-          rel="noreferrer"
-        >
-          <FaChrome />
-          Feedback App
-        </a>
-      </div>
+      {/*<div className="w-fit text-2xl my-5">*/}
+      {/*  <a*/}
+      {/*    href="https://feedback-ui-ks.netlify.app/"*/}
+      {/*    target="_blank"*/}
+      {/*    className="flex justify-center items-center gap-5 hover:scale-105 hover:text-gray-100"*/}
+      {/*    rel="noreferrer"*/}
+      {/*  >*/}
+      {/*    <FaChrome />*/}
+      {/*    Feedback App*/}
+      {/*  </a>*/}
+      {/*</div>*/}
     </div>
   );
 }
