@@ -47,7 +47,7 @@ function Referenzen() {
             </div>
             <div className="w-fit text-2xl my-5">
                 <a
-                    href="https://github-finder-app-one-ecru.vercel.app/"
+                    href="https://github-finder-thyriion.vercel.app/"
                     target="_blank"
                     className="flex justify-center items-center gap-5 hover:scale-105 hover:text-gray-100"
                     rel="noreferrer">
